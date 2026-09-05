@@ -157,7 +157,7 @@ returns corrections to the generator; and an **integrator** consolidates the fin
 decision. This package implements that control flow as interchangeable components.
 
 | Paper | Package component | Role |
-|---|---|---|---|
+|---|---|---|
 | Sensor → Updated State of the World | `TurnContext` | Holds the user input, history, and scenario context for one turn (read-only) | 
 | Expectations and guidelines | `base_context` + `GuidelineRule`s | The expectations the output must satisfy | 
 | Behavioral (LLM) Generator | `Provider` / `HFModel` | Produces *N* candidate completions per turn | 
