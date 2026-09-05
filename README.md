@@ -15,20 +15,20 @@ The design is a working implementation of the architecture proposed by **Salmani
 ## Table of contents
 
 - [Overview](#overview)
-- [How it works](#how-it-works)
-- [Definitions & key concepts](#definitions--key-concepts)
-- [How it maps to the paper](#how-it-maps-to-the-paper)
-- [The three layers](#the-three-layers)
-- [Repository structure](#repository-structure)
+- [How it Works](#how-it-works)
+- [The Three Layers](#the-three-layers)
+- [Key Concepts and Definitions](#key-concepts-and-definitions)
+- [How it Maps to the Paper](#how-it-maps-to-the-paper)
+- [Repository Structure](#repository-structure)
 - [Installation](#installation)
+- [The Pipeline, Start to Finish](#the-pipeline-start-to-finish)
 - [Quickstart](#quickstart)
-- [The pipeline, start to finish](#the-pipeline-start-to-finish)
-- [Creating a custom module](#creating-a-custom-module)
-- [Custom vocabularies](#custom-vocabularies)
-- [Writing a custom provider](#writing-a-custom-provider)
+- [Create a Custom Module](#creating-a-custom-module)
+- [Full Example - Surprise Party Scenario](#full-example-surprise-party-scenario)
+- [Custom Vocabularies](#custom-vocabularies)
+- [Writing a Custom Provider](#writing-a-custom-provider)
 - [Documentation](#documentation)
-- [API reference](#api-reference)
-- [Testing](#testing)
+- [API Reference](#api-reference)
 - [Roadmap](#roadmap)
 - [Citation](#citation)
 
@@ -65,7 +65,7 @@ paper's evaluation. The specific scenario, base context, and guidelines can be c
 
 ---
 
-## How it works
+## How it Works
 
 Each turn runs as a closed reflective loop:
 
@@ -170,7 +170,7 @@ decision. This package implements that control flow as interchangeable component
 
 ---
 
-## Repository structure
+## Repository Structure
 
 ```
 reflective-llm/
@@ -230,7 +230,7 @@ pip install -e ".[hf]"      # with the built-in HuggingFace provider (torch, tra
 
 ---
 
-## The pipeline, start to finish
+## The Pipeline, Start to Finish
 
 Invoking `pipeline(...)` transfers control to
 `AgenticFramework.main_chat_handler`. The stages, in order:
@@ -374,7 +374,7 @@ g = [GuidelineRule(rule="Flag any comment that contains harsh or innapropriate c
 pipeline = Reflective(HFModel(model_name="..."), [BrandVoiceModule(g, base_context=CTX)], base_context=CTX)
 ```
 
-### A module that contains a Generative Component
+### A Module that Contains a Generative Component
 
 A module that both contributes to the generation prompt and parses structured
 output from it (as self-simulation does) implements two methods:
@@ -490,7 +490,7 @@ Complete documentation is provided in [`docs/`](docs/):
 
 ---
 
-## API reference
+## API Reference
 
 ### Top-level (`from reflective import ...`)
 
