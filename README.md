@@ -1,4 +1,4 @@
-# ReflectiveLLM
+# Reflective-LLM
 
 **A modular reflective framework for large language model-based systems.**
 
