@@ -6,7 +6,7 @@ This framework situates a language model within a closed reflective loop. Rather
 
 The framework is task-agnostic. It applies to any setting in which a language model produces outputs whose alignment with human expectations, values, or social norms is consequential — including safety, social appropriateness, tone, factual reliability, persona consistency, and policy compliance. Two reflective modules are provided as reference implementations to demonstrate how LLMs can validate their own outputs when equipped with self-reflection capabilities. Additional modules can be defined to customize the usage capabilities of this framework. All modules are designed to be independent and swappable to meet the needs of any application where LLMs generate textual responses.
 
-Both candidate generation and evaluation are governed by *slots* (see [Definitions](#definitions--key-concepts)), enabling the framework to be adapted to a given application without modifying its internal parameters directly.
+Both candidate generation and evaluation are governed by *slots*, enabling the framework to be adapted to a given application without modifying its internal parameters directly.
 
 The design is a working implementation of the architecture proposed by **Salmani & Lewis, *A Reflective Architecture for LLM-based Systems*** (IEEE ACSOS-C 2025). This document maps the implementation to the described architecture and documents its installation and use.
 
