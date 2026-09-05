@@ -65,7 +65,6 @@ paper's evaluation. The specific scenario, base context, and guidelines can be c
 
 ---
 
-
 ## How it works
 
 Each turn runs as a closed reflective loop:
@@ -102,7 +101,6 @@ both to the **architecture** layer's pipeline.
   [docs/framework.md](docs/framework.md) and [docs/pipeline.md](docs/pipeline.md).
 
 ---
-
 
 ## Key Concepts and Definitions
 
@@ -396,6 +394,8 @@ To implement a module that is not a `PromptEvaluator` subclass — for example, 
 deterministic check or a differently structured LLM-based evaluator — subclass
 `ReflectiveModule` and implement `run()`. See [docs/modules.md](docs/modules.md)
 for further explanation regarding `ReflectiveModule`.
+
+---
 
 ## Full Example - Surprise Party Scenario
 
