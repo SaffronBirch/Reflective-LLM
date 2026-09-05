@@ -397,7 +397,7 @@ deterministic check or a differently structured LLM-based evaluator — subclass
 `ReflectiveModule` and implement `run()`. See [docs/modules.md](docs/modules.md)
 for further explanation regarding `ReflectiveModule`.
 
-### Full Example - Surprise Party Scenario
+## Full Example - Surprise Party Scenario
 
 See `examples/selfsim_config.py` and `examples/run_selfsim_evaluation.py` for a runnable example that demonstrates the reflective pipeline with a full example. When in the root directory `reflective-llm`, use the following command to run the surprise party example:
 
