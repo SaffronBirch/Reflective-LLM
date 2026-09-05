@@ -29,7 +29,7 @@ The design is a working implementation of the architecture proposed by **Salmani
 - [Writing a Custom Provider](#writing-a-custom-provider)
 - [Documentation](#documentation)
 - [API Reference](#api-reference)
-- [Roadmap](#roadmap)
+- [Future Work](#future-work)
 - [Citation](#citation)
 
 ---
@@ -522,7 +522,7 @@ Defined in `reflective/dataclasses.py`. Full fields: [docs/dataclasses.md](docs/
 
 ---
 
-## Roadmap
+## Future Work
 
 The following directions are planned but not yet implemented:
 
