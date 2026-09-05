@@ -406,6 +406,7 @@ See `examples/selfsim_config.py` and `examples/run_selfsim_evaluation.py` for a 
 > `PYTHONPATH=. python examples/run_selfsim_evaluation.py`
 
 The model used for this example is `Qwen/Qwen2.5-0.5B-Instruct` with is around 3GB. The model can be changed to a different chat-tuned HuggingFace model in the configuration file `selfsim_config.py` under `MODEL_NAME`.
+
 ---
 
 ## Custom Vocabularies
