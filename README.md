@@ -10,8 +10,6 @@ Both candidate generation and evaluation are governed by *slots* (see [Definitio
 
 The design is a working implementation of the architecture proposed by **Salmani & Lewis, *A Reflective Architecture for LLM-based Systems*** (IEEE ACSOS-C 2025). This document maps the implementation to the described architecture and documents its installation and use.
 
-> First-time users are encouraged to begin with the [tutorials](docs/tutorials.md), which run without a GPU or model download.
-
 ---
 
 ## Table of contents
