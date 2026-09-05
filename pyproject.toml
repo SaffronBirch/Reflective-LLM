@@ -1,0 +1,36 @@
+# pyproject.toml 
+
+# Distribution name: reflective-llm   (what you `pip install`)
+# Import name:       reflective       (what you `import`, found under src/)
+
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "reflective-llm"
+version = "0.1.0"
+description = "Add a reflective validation loop to LLM-based systems."
+readme = "README.md"
+
+
+requires-python = ">=3.9"
+
+
+license = { text = "MIT" }
+
+
+dependencies = []
+
+
+[project.optional-dependencies]
+hf = [
+    "torch>=2.0",
+    "transformers>=4.34",   # 4.34+ ships tokenizer.apply_chat_template
+    "accelerate>=0.26",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

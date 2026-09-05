@@ -1,0 +1,14 @@
+# Core dependencies for the reflective-llm package
+# Requires Python 3.11+
+
+torch>=2.0.0
+transformers>=4.40.0
+accelerate>=0.27.0
+
+# Optional: enables 4-bit / 8-bit quantization for large models
+# Uncomment if you plan to load quantized weights
+# bitsandbytes>=0.43.0
+
+# Optional: faster tokenization
+# sentencepiece>=0.2.0
+# protobuf>=4.0.0
